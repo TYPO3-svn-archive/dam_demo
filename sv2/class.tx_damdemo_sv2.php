@@ -114,6 +114,8 @@ class tx_damdemo_sv2 extends t3lib_svbase {
 	 * eg. charset conversion
 	 */
 	function postProcess () {
+		global $TYPO3_CONF_VARS;
+		
 
 		$csConvObj = t3lib_div::makeInstance('t3lib_cs');
 
