@@ -35,11 +35,11 @@
  *
  *
  *   59: class tx_damdemo_indexRule extends tx_dam_indexRuleBase
- *   63:     function getTitle()
- *   68:     function getDescription()
- *   73:     function getOptionsForm()
- *   83:     function getOptionsInfo()
- *   91:     function processMeta($meta)
+ *   61:     function getTitle()
+ *   66:     function getDescription()
+ *   71:     function getOptionsForm()
+ *   81:     function getOptionsInfo()
+ *   89:     function processMeta($meta)
  *
  * TOTAL FUNCTIONS: 5
  * (This index is automatically created/updated by the script "update-class-index")
