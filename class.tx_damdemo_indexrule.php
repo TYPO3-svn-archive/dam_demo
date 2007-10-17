@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2003-2004 René Fritz (r.fritz@colorcube.de)
+*  (c) 2003-2005 René Fritz (r.fritz@colorcube.de)
 *  All rights reserved
 *
 *  This script is part of the Typo3 project. The Typo3 project is
@@ -90,4 +90,7 @@ class tx_damdemo_indexRule extends tx_dam_indexRuleBase {
 
 
 
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/dam_demo/class.tx_damdemo_indexrule.php'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/dam_demo/class.tx_damdemo_indexrule.php']);
+}
 ?>

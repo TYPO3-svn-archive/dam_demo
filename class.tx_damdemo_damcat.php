@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2003-2004 René Fritz (r.fritz@colorcube.de)
+*  (c) 2003-2005 René Fritz (r.fritz@colorcube.de)
 *  All rights reserved
 *
 *  This script is part of the Typo3 project. The Typo3 project is
@@ -69,7 +69,7 @@ class tx_damdemo_damcat extends tx_dam_selProcBase {
 	 * @return  array       Multidimensional.
 	 */
 	function getTreeArray()	{
-
+/*
 		$tree = array (
 			'brands' => array (
 				'title' => 'BRANDS',
@@ -110,6 +110,27 @@ class tx_damdemo_damcat extends tx_dam_selProcBase {
 						),
 					),
 				),
+			),
+		);
+*/
+
+		$tree = array (
+
+			'1' => array (
+				'title' => 'bad',
+				'id' => '1',
+			),
+			'2' => array (
+				'title' => 'medium',
+				'id' => '2',
+			),
+			'3' => array (
+				'title' => 'good',
+				'id' => '3',
+			),
+			'4' => array (
+				'title' => 'great',
+				'id' => '4',
 			),
 		);
 
