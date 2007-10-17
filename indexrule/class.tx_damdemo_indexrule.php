@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2003-2005 René Fritz (r.fritz@colorcube.de)
+*  (c) 2003-2006 Rene Fritz (r.fritz@colorcube.de)
 *  All rights reserved
 *
 *  This script is part of the Typo3 project. The Typo3 project is
@@ -25,53 +25,65 @@
  * Index rule plugin for the DAM.
  * Part of the DAM (digital asset management) extension.
  *
- * @author	René Fritz <r.fritz@colorcube.de>
+ * @author	Rene Fritz <r.fritz@colorcube.de>
  * @package TYPO3
  * @subpackage tx_damdemo
  */
 /**
  * [CLASS/FUNCTION INDEX of SCRIPT]
  *
+ *
+ *
+ *   59: class tx_damdemo_indexRule extends tx_dam_indexRuleBase
+ *   63:     function getTitle()
+ *   68:     function getDescription()
+ *   73:     function getOptionsForm()
+ *   83:     function getOptionsInfo()
+ *   91:     function processMeta($meta)
+ *
+ * TOTAL FUNCTIONS: 5
+ * (This index is automatically created/updated by the script "update-class-index")
+ *
  */
 
-require_once(t3lib_extMgm::extPath('dam').'lib/class.tx_dam_indexrulebase.php');
+require_once(PATH_txdam.'lib/class.tx_dam_indexrulebase.php');
 
 /**
  * Index rule plugin for the DAM
  * Demo
  *
- * @author	René Fritz <r.fritz@colorcube.de>
+ * @author	Rene Fritz <r.fritz@colorcube.de>
  * @package TYPO3
  * @subpackage tx_dam
  */
 class tx_damdemo_indexRule extends tx_dam_indexRuleBase {
-	
+
 	var $setup = array();
 
 	function getTitle()	{
 		global $LANG;
-		return $LANG->sL('LLL:EXT:dam_demo/locallang_indexrules.php:title');
+		return $LANG->sL('LLL:EXT:dam_demo/indexrule/locallang_indexrules.xml:title');
 	}
 
 	function getDescription()	{
 		global $LANG;
-		return $LANG->sL('LLL:EXT:dam_demo/locallang_indexrules.php:desc');
+		return $LANG->sL('LLL:EXT:dam_demo/indexrule/locallang_indexrules.xml:desc');
 	}
 
 	function getOptionsForm()	{
-		global $LANG, $SOBE;
+		global $LANG;
 
 		$code = array();
 		$code[1][1] = 	'<input type="hidden" name="data[rules][tx_damdemo_indexRule][option1]" value="0" />'.
 						'<input type="checkbox" name="data[rules][tx_damdemo_indexRule][option1]"'.($this->setup['option1']?' checked="checked"':'').' value="1" />&nbsp;';
-		$code[1][2] = $LANG->sL('LLL:EXT:dam_demo/locallang_indexrules.php:option1');
-		return $SOBE->doc->table($code);
+		$code[1][2] = $LANG->sL('LLL:EXT:dam_demo/indexrule/locallang_indexrules.xml:option1');
+		return $GLOBALS['SOBE']->doc->table($code);
 	}
 
 	function getOptionsInfo()	{
 		global $LANG;
 		if($this->setup['option1']) {
-			$out .= $LANG->sL('LLL:EXT:dam_demo/locallang_indexrules.php:option1');
+			$out .= $LANG->sL('LLL:EXT:dam_demo/indexrule/locallang_indexrules.xml:option1');
 		}
 		return $out;
 	}
@@ -82,7 +94,7 @@ class tx_damdemo_indexRule extends tx_dam_indexRuleBase {
 		if($this->setup['option1']) {
 			// do some extra stuff
 		}
-		
+
 		return $meta;
 	}
 
@@ -90,7 +102,7 @@ class tx_damdemo_indexRule extends tx_dam_indexRuleBase {
 
 
 
-if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/dam_demo/class.tx_damdemo_indexrule.php'])	{
-	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/dam_demo/class.tx_damdemo_indexrule.php']);
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/dam_demo/indexrule/class.tx_damdemo_indexrule.php'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/dam_demo/indexrule/class.tx_damdemo_indexrule.php']);
 }
 ?>

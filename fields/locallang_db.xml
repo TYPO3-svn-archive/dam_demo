@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description></description>
+        <type>database</type>
+        <csh_table></csh_table>
+        <fileId>EXT:dam_demo/locallang_db.xml</fileId>
+        <labelContext type="array">
+            <label index="tx_dam.tx_damdemo_info"></label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.0"></label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.1"></label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.2"></label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.3"></label>
+            <label index="tx_dam.tx_damdemo_customcategory"></label>
+        </labelContext>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="tx_dam.tx_damdemo_info">Custom Info:</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.0">bad</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.1">medium</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.2">good</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.3">great</label>
+            <label index="tx_dam.tx_damdemo_customcategory">Rating:</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="tx_dam.tx_damdemo_info">Custom Info:</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.0">schlecht</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.1">mittel</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.2">gut</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.3">sehr gut</label>
+            <label index="tx_dam.tx_damdemo_customcategory">Bewertung:</label>
+        </languageKey>
+    </data>
+    <orig_hash type="array">
+        <languageKey index="default" type="array">
+            <label index="tx_dam.tx_damdemo_info" type="integer">154806602</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.0" type="integer">195977369</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.1" type="integer">7709667</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.2" type="integer">123074652</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.3" type="integer">181051751</label>
+            <label index="tx_dam.tx_damdemo_customcategory" type="integer">78148594</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="tx_dam.tx_damdemo_info" type="integer">154806602</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.0" type="integer">195977369</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.1" type="integer">7709667</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.2" type="integer">123074652</label>
+            <label index="tx_dam.tx_damdemo_customcategory.I.3" type="integer">181051751</label>
+            <label index="tx_dam.tx_damdemo_customcategory" type="integer">78148594</label>
+        </languageKey>
+    </orig_hash>
+    <orig_text type="array">
+        <languageKey index="default" type="array">
+        </languageKey>
+        <languageKey index="de" type="array">
+        </languageKey>
+    </orig_text>
+</T3locallang>
