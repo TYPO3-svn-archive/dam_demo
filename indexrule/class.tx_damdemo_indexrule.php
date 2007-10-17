@@ -58,8 +58,6 @@ require_once(PATH_txdam.'lib/class.tx_dam_indexrulebase.php');
  */
 class tx_damdemo_indexRule extends tx_dam_indexRuleBase {
 
-	var $setup = array();
-
 	function getTitle()	{
 		global $LANG;
 		return $LANG->sL('LLL:EXT:dam_demo/indexrule/locallang_indexrules.xml:title');
