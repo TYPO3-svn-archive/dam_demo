@@ -142,7 +142,8 @@ class tx_damdemo_damcat extends tx_dam_browseTree {
 		if($queryType=='NOT') {
 			$query.= ' NOT';
 		}
-		$query.= ' LIKE BINARY '.$GLOBALS['TYPO3_DB']->fullQuoteStr($id,'tx_dam');
+		$likeStr = $GLOBALS['TYPO3_DB']->escapeStrForLike($id,'tx_dam');
+		$query.= ' LIKE BINARY '.$GLOBALS['TYPO3_DB']->fullQuoteStr($likeStr,'tx_dam');
 
 		return array($queryType,$query);
 	}
@@ -282,7 +283,8 @@ class tx_damdemo_damcat extends tx_dam_browseTree {
 //		if($queryType=='NOT') {
 //			$query.= ' NOT';
 //		}
-//		$query.= ' LIKE BINARY '.$GLOBALS['TYPO3_DB']->fullQuoteStr($id,'tx_dam');
+//		$likeStr = $GLOBALS['TYPO3_DB']->escapeStrForLike($id,'tx_dam');
+//		$query.= ' LIKE BINARY '.$GLOBALS['TYPO3_DB']->fullQuoteStr($likeStr,'tx_dam');
 //
 //		return array($queryType,$query);
 //	}
